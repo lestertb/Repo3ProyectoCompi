@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.swing.*;
 
 @RestController
+@CrossOrigin
 public class testRoute {
 
     private static String res = "";
