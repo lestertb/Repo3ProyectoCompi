@@ -956,7 +956,7 @@ public class MiVisitor extends miParserBaseVisitor<Object> {
                 if (sonVariables == 1){ //La primera es variable
 
                     switch (ctx.ADDITIVEOP().get(0).toString()) {
-                        case "or" -> {
+                        case "or" : {
                             boolean isErr = false;
                             assert id1 != null;
                             if (id1.type != Type.INT) {
@@ -983,7 +983,7 @@ public class MiVisitor extends miParserBaseVisitor<Object> {
                             else
                                 return id1.type;
                         }
-                        case "+" -> {
+                        case "+" : {
                             assert id1 != null;
                             if (id1.type == Type.INT && termDiffType2 == Type.INT){
                                 return Type.INT;
@@ -997,7 +997,7 @@ public class MiVisitor extends miParserBaseVisitor<Object> {
                                 return id1.type;
                             }
                         }
-                        case "-" -> {
+                        case "-" : {
                             assert id1 != null;
                             if (id1.type == Type.INT && termDiffType2 == Type.INT) {
                                 return Type.INT;
